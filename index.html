@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> 
+   <link rel="stylesheet" href="bootstrap/bootstrap-select.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
 
     <title>PizzaPap</title>
@@ -15,16 +17,53 @@
 
     <div class="container">
         <div class="row">
-            <div class="jumbotron">
+            <div class=" col-md-12 jumbotron fluid text-center">
                 <h1> <span>Empire</span>
                   <span>Pizza</span></h1>
 
             </div>
 
-            <div class="col-md">
+            <div class="col-12 text-center jumbotron">
               <h3>Taste the Sweetness...</h3>
 
             </div>
+
+            <div class=" jumbotron col-12">
+                <div class="col-12 ">
+
+                    <label>Multiple Select</label>
+                    <select class="selectpicker" multiple>
+                      <option>Toronto</option>
+                      <option>Bucharest</option>
+                      <option>Paris</option>
+                    </select>
+                    
+                    <label>Select your pizza preference below to place an order:</label>
+                    <select class="selectpicker" multiple>
+                        <optgroup label="Pizza Size" data-max-options="1" > 
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        
+                          </optgroup>
+                      <optgroup label="Pizza Crust" data-max-options="1">
+                        <option>Crispy</option>
+                        <option>Stuffed</option>
+                        <option >Glutten Free</option>
+                      </optgroup>
+                      <optgroup label="Pizza Toppings" data-max-options="1"> 
+                        <option>Chicken</option>
+                        <option>Beef</option>
+                        <option value="">Veggie</option>
+                      </optgroup>
+                    </select>
+                    
+                  </div>
+
+            </div>
+
+            
+               
 
 
             <div class="col-md-4">
@@ -42,15 +81,24 @@
               
             </div>
 
+            
 
+              
+              
             
-        </div>
-            
+
+
+
+      </div>
+      
     </div>
     
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
