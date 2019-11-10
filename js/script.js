@@ -5,24 +5,34 @@ var priceTotal = 0;
 $(document).ready( function(){
     $('.order').click(function (){
         itemCount ++;
-        
+
       var crust = $('#crust option:selected').val();
       var topping = $('#topping option:selected').val();
-      var size = $('#crust option:selected').val();
+      var size = $('#size option:selected').val();
       var qty = itemCount;
+      var delivery=$('#delivery option:selected').val();
 
-        var order = function (crust, topping, size,qty,delivery) {
-          this.crust =  crust;
+      alert(crust)
+      alert(topping)
+      alert(size)
+      alert(qty)
+      alert(delivery)
 
-          this.topping = topping;
-          this.size = size;
-          this.qty = qty
-          this.delivery= delivery;
-        }  
+
+        // var order = function (crust, topping, size,qty,delivery) {
+        //   this.crust =  crust;
+
+        //   this.topping = topping;
+        //   this.size = size;
+        //   this.qty = qty
+        //   this.delivery= delivery;
+        // }  
+        // var car1 = new order(crust, topping, size,qty,delivery);
+        // alert (car1)
 
         
         
-        var order = new Order(crust, topping, size,qty);
+        
 
 
         

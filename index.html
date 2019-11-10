@@ -52,8 +52,9 @@
                     
                     <label>Select type of Crust </label>
                     <select class="selectpicker" id="crust" >
-                        
+                      
                       <optgroup label="Pizza Crust" data-max-options="1">
+                          <option selected>Choose...</option>
                         <option value="crisp">Crispy</option>
                         <option value="stuffed"> Stuffed</option>
                         <option value="glutten-free">Glutten Free</option>
@@ -61,8 +62,9 @@
                       
                     </select> 
                     <label for="toppings"> Select toppings</label>
-                    <select name="toppings" id="toppings" class="selectpicker">
+                    <select name="toppings" id="topping" class="selectpicker">
                         <optgroup label="Pizza Toppings" data-max-options="1"> 
+                            <option selected>Choose...</option>
                             <option value="chicken">Chicken</option>
                             <option value="beef">Beef</option>
                             <option value="veggie">Veggie</option>
@@ -72,11 +74,20 @@
                     <select class="selectpicker" name="size" id="size">
 
                         <optgroup label="Pizza Size" data-max-options="1" > 
+                            <option selected>Choose...</option>
                             <option value="small">Small</option>
                             <option value="medium"> Medium</option>
                             <option value="large">Large</option>
                         
                           </optgroup>
+                    </select>
+
+                    <select name="delivery" id="delivery" class="selectpicker">
+                      <optgroup label="Delivery Options">
+                          <option selected>Choose...</option>
+                        <option value="pickup">Store Pickup</option>
+                        <option value="deliver">Home/Office Delivery</option>
+                      </optgroup>
                     </select>
                     <br>
                     <button type="button" class=" checkout btn btn-dark">
