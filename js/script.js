@@ -30,7 +30,33 @@ $(document).ready(function () {
     var custOrder = new Order(crust1, topping1, size1, quantity1, delivery1);
     
     //checking price depending on order
-    
+
+    if(custOrder.size == "small"&& topping1 == "chicken"||"beef"){
+      priceTotal += pricelist.price1[0];
+
+    }else if (custOrder.size == "small"&& topping1=="veggie"){
+      priceTotal += pricelist.price2[0];
+
+    }else if (custOrder.size == "medium"&& topping1== "chicken"||"beef"){
+      priceTotal += pricelist.price1[1];
+
+    }else if (custOrder.size == "medium"&& topping1=="veggie"){
+      priceTotal += pricelist.price2[1];
+
+    }else if (custOrder.size == "large"&& topping1== "chicken"||"beef"){
+      priceTotal += pricelist.price1[2];
+
+    }else if (custOrder.size == "large"&& topping1== "veggie"){
+      priceTotal += pricelist.price2[2];
+
+    }
+  $('.checkout').click(
+    function(){
+      alert(priceTotal);
+    }
+  )
+
+    //
   
   
   
