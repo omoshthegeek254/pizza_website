@@ -35,7 +35,7 @@
       <div class=" p-5 m-2  col-12">
         <div class="col-12 text-center">
           <div id="carto">
-            <div id="cart-container">
+            <!-- <div id="cart-container">
               <div id="cart">
                 <i class="fa fa-shopping-cart fa-2x openCloseCart" aria-hidden="true"></i><button type="button"
                   class=" cart btn btn-dark">
@@ -44,7 +44,7 @@
 
               </div>
               <span id="itemCount"></span>
-            </div>
+            </div> -->
 
 
 
@@ -57,7 +57,7 @@
           <select class="selectpicker" id="crust">
 
             <optgroup label="Pizza Crust" data-max-options="1">
-              <option selected>Choose...</option>
+              <option >Choose...</option>
               <option value="100">Crispy : Ksh 100</option>
               <option value="120"> Stuffed : Ksh 120</option>
               <option value="150">Glutten Free : KSH 150</option>
@@ -67,7 +67,7 @@
           <label for="toppings"> Select toppings</label>
           <select name="toppings" id="topping" class="selectpicker">
             <optgroup label="Pizza Toppings" data-max-options="1">
-              <option selected>Choose...</option>
+              <option ></option>Choose...</option>
               <option value="210">Veggie : Ksh 210</option>
               <option value="170">Pepperoni : Ksh 170</option>
               <option value="150">Cheese & onions : Ksh 150</option>
@@ -77,7 +77,7 @@
           <select class="selectpicker" name="size" id="size">
 
             <optgroup label="Pizza Size" data-max-options="1">
-              <option selected>Choose...</option>
+              <option >Choose...</option>
               <option value="675">Large : Ksh 675</option>
               <option value="475"> Medium : Ksh 475</option>
               <option value="250">Small : Ksh 250</option>
@@ -85,15 +85,26 @@
             </optgroup>
           </select>
           <label for="quantity">Enter Quantity</label>
-          <input type="number" class="selectpicker"id="quantity"placeholder="How many would you like" min="1">
+          <input type="number" class="selectpicker"id="quantity"placeholder="How many would you like" min="1" required>
 
-          <select name="delivery" id="delivery" class="selectpicker">
+          <select class="selectpicker" name="del" id="del">
+
+            <optgroup label="Del 1" data-max-options="1">
+              <option ></option>Choose...</option>
+              <option value="675">Large : Ksh 675</option>
+              <option value="475"> Medium : Ksh 475</option>
+              <option value="250">Small : Ksh 250</option>
+
+            </optgroup>
+          </select>
+
+          <!-- <select name="delivery" id="delivery" class="selectpicker">
             <optgroup label="Delivery Options">
               <option selected>Choose...</option>
               <option value="0">Store Pickup : Free</option>
               <option value="250" id="pap">Home/Office Delivery : Ksh 250</option>
             </optgroup>
-          </select>
+          </select> -->
           <br>
           <hr>
           <label for="checkout">Checkout Options</label>
@@ -103,9 +114,9 @@
           <button type="button" class=" pick btn btn-dark">
             Store Pickup
           </button>
-          <button type="button" class=" order btn btn-dark">
+          <!-- <button type="button" class=" order btn btn-dark">
             Qty <i class="fas fa-plus-square fa-x2"></i>
-          </button>
+          </button> -->
 
         </div>
 

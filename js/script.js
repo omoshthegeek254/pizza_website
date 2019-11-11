@@ -2,18 +2,21 @@
 
 $(document).ready(function () {
  
-  var crust1 = parseInt($('#crust option:selected').val());
-  var topping1 = parseInt($('#topping option:selected').val());
-  var size1 = parseInt($('#size option:selected').val());
-  var quantity1 = itemCount;
-  var delivery1 = parseInt($('#deliver').val());
+  var crust1 = $('#crust option:selected').val();
+  var topping1 = $('#topping option:selected').val();
+  var size1 = $('#size option:selected').val();
+  var quantity1 = $('#quantity').val();
+  // var delivery1 = $('#delivery option:selected').val()
 
  
 
   $('.deliver').click(function () {
-    
-alert(delivery1);
-  
+    alert(crust1);
+    alert(topping11);
+    alert(size1);
+    alert(quantity1);
+//var address= prompt("Please Enter Delivery location followed by your phone number ");
+
     
   
   //order constructor
@@ -27,12 +30,12 @@ alert(delivery1);
     var custOrder = new Order(crust1,topping1, size1, quantity1, delivery1);
     var priceTotal= crust1+topping1+size1* quantity1;
     
-  $('.checkout').click(
-    function(){
-      // var pay = parseInt(crust1)+parseInt(topping1)+parseInt(size1)+parseInt(delivery1);
-      alert(" please pay a total amont of  Ksh :  "+pay);
-    }
-  )
+  // $('.checkout').click(
+  //   function(){
+  //     // var pay = parseInt(crust1)+parseInt(topping1)+parseInt(size1)+parseInt(delivery1);
+  //     alert(" please pay a total amont of  Ksh :  "+pay);
+  //   }
+  // )
 
     //
   
@@ -48,19 +51,19 @@ alert(delivery1);
 
 
 
-    $('#itemCount').text(itemCount).css('display', 'block');
+    // $('#itemCount').text(itemCount).css('display', 'block');
 
 
 
   })
-  $('.cart').click(function () {
-    itemCount--;
-    $('#itemCount').text(itemCount).css('display', 'block');
-    if (itemCount < 1) {
-      $('#itemCount').css('display', 'none');
-      itemCount = 0;
-    }
-  }
-  )
+  // $('.cart').click(function () {
+  //   itemCount--;
+  //   $('#itemCount').text(itemCount).css('display', 'block');
+  //   if (itemCount < 1) {
+  //     $('#itemCount').css('display', 'none');
+  //     itemCount = 0;
+  //   }
+  // }
+  // )
 
 })
