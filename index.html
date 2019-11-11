@@ -58,9 +58,9 @@
 
             <optgroup label="Pizza Crust" data-max-options="1">
               <option selected>Choose...</option>
-              <option value="crisp">Crispy</option>
-              <option value="stuffed"> Stuffed</option>
-              <option value="glutten-free">Glutten Free</option>
+              <option value="100">Crispy : Ksh 100</option>
+              <option value="120"> Stuffed : Ksh 120</option>
+              <option value="150">Glutten Free : KSH 150</option>
             </optgroup>
 
           </select>
@@ -68,9 +68,9 @@
           <select name="toppings" id="topping" class="selectpicker">
             <optgroup label="Pizza Toppings" data-max-options="1">
               <option selected>Choose...</option>
-              <option value="chicken">Chicken</option>
-              <option value="beef">Beef</option>
-              <option value="veggie">Veggie</option>
+              <option value="210">Veggie : Ksh 210</option>
+              <option value="170">Pepperoni : Ksh 170</option>
+              <option value="150">Cheese & onions : Ksh 150</option>
             </optgroup>
           </select>
           <label> Select Size</label>
@@ -78,23 +78,30 @@
 
             <optgroup label="Pizza Size" data-max-options="1">
               <option selected>Choose...</option>
-              <option value="small">Small</option>
-              <option value="medium"> Medium</option>
-              <option value="large">Large</option>
+              <option value="675">Large : Ksh 675</option>
+              <option value="475"> Medium : Ksh 475</option>
+              <option value="250">Small : Ksh 250</option>
 
             </optgroup>
           </select>
+          <label for="quantity">Enter Quantity</label>
+          <input type="number" class="selectpicker"id="quantity"placeholder="How many would you like" min="1">
 
           <select name="delivery" id="delivery" class="selectpicker">
             <optgroup label="Delivery Options">
               <option selected>Choose...</option>
-              <option value="pickup">Store Pickup</option>
-              <option value="deliver" id="pap">Home/Office Delivery</option>
+              <option value="0">Store Pickup : Free</option>
+              <option value="250" id="pap">Home/Office Delivery : Ksh 250</option>
             </optgroup>
           </select>
           <br>
-          <button type="button" class=" checkout btn btn-dark">
-            Checkout
+          <hr>
+          <label for="checkout">Checkout Options</label>
+          <button type="button" class=" deliver btn btn-dark">
+            Home delivery
+          </button>
+          <button type="button" class=" pick btn btn-dark">
+            Store Pickup
           </button>
           <button type="button" class=" order btn btn-dark">
             Qty <i class="fas fa-plus-square fa-x2"></i>

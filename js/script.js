@@ -1,22 +1,19 @@
 
 
 $(document).ready(function () {
-  var itemCount = 0;
-  var priceTotal = 0;
-  var pricelist = {
-    price1: [500, 700, 950],
-    price2: [600, 800, 1050]
-  }
+ 
+  var crust1 = parseInt($('#crust option:selected').val());
+  var topping1 = parseInt($('#topping option:selected').val());
+  var size1 = parseInt($('#size option:selected').val());
+  var quantity1 = itemCount;
+  var delivery1 = parseInt($('#deliver').val());
 
-  $('.order').click(function () {
-    //incrementing quantity
-    itemCount++;
+ 
 
-    var crust1 = $('#crust option:selected').val();
-    var topping1 = $('#topping option:selected').val();
-    var size1 = $('#size option:selected').val();
-    var quantity1 = itemCount;
-    var delivery1 = $('#delivery option:selected').val();
+  $('.deliver').click(function () {
+    
+alert(delivery1);
+  
     
   
   //order constructor
@@ -27,32 +24,13 @@ $(document).ready(function () {
       this.quantity = quantity;
     }
   
-    var custOrder = new Order(crust1, topping1, size1, quantity1, delivery1);
+    var custOrder = new Order(crust1,topping1, size1, quantity1, delivery1);
+    var priceTotal= crust1+topping1+size1* quantity1;
     
-    //checking price depending on order
-
-    if(custOrder.size == "small"&& topping1 == "chicken"||"beef"){
-      priceTotal += pricelist.price1[0];
-
-    }else if (custOrder.size == "small"&& topping1=="veggie"){
-      priceTotal += pricelist.price2[0];
-
-    }else if (custOrder.size == "medium"&& topping1== "chicken"||"beef"){
-      priceTotal += pricelist.price1[1];
-
-    }else if (custOrder.size == "medium"&& topping1=="veggie"){
-      priceTotal += pricelist.price2[1];
-
-    }else if (custOrder.size == "large"&& topping1== "chicken"||"beef"){
-      priceTotal += pricelist.price1[2];
-
-    }else if (custOrder.size == "large"&& topping1== "veggie"){
-      priceTotal += pricelist.price2[2];
-
-    }
   $('.checkout').click(
     function(){
-      alert(priceTotal);
+      // var pay = parseInt(crust1)+parseInt(topping1)+parseInt(size1)+parseInt(delivery1);
+      alert(" please pay a total amont of  Ksh :  "+pay);
     }
   )
 
