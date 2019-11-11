@@ -53,7 +53,8 @@
 
 
 
-          <label>Select type of Crust </label>
+          <div class="col-md-13 text-center ">
+            <label>Select type of Crust </label>
           <select class="selectpicker" id="crust">
 
             <optgroup label="Pizza Crust" data-max-options="1">
@@ -65,6 +66,7 @@
 
           </select>
           <label for="toppings"> Select toppings</label>
+
           <select name="topping" id="topping" class="selectpicker">
             
             <optgroup label="Pizza Toppings" data-max-options="1">
@@ -74,6 +76,7 @@
               <option value="150">Cheese & onions : Ksh 150</option>
             </optgroup>
           </select>
+
           <label> Select Size</label>
           <select class="selectpicker" name="size" id="size">
 
@@ -85,8 +88,9 @@
 
             </optgroup>
           </select>
+          
           <label for="quantity">Enter Quantity</label>
-          <input type="number" class="selectpicker"id="quantity"placeholder="How many would you like" min="1" required>
+          <input type="number" class=""id="quantity"placeholder="How many would you like" min="1" required>
 
           <select class="selectpicker" name="del" id="del">
 
@@ -98,17 +102,12 @@
 
             </optgroup>
           </select>
+          </div>
 
-          <!-- <select name="delivery" id="delivery" class="selectpicker">
-            <optgroup label="Delivery Options">
-              <option selected>Choose...</option>
-              <option value="0">Store Pickup : Free</option>
-              <option value="250" id="pap">Home/Office Delivery : Ksh 250</option>
-            </optgroup>
-          </select> -->
+         
           <br>
           <hr>
-          <label for="checkout">Checkout Options</label>
+          <label >Checkout Options</label>
           <button type="button" class=" deliver btn btn-dark">
             Home delivery
           </button>

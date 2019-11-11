@@ -9,7 +9,7 @@ $(document).ready(function(){
     //   var qty = itemCount;
     //   var delivery=$('#delivery option:selected').val();
 
-      alert(crust+"-"+topping+"-"+size);
+      alert(typeof crust+"-"+typeof topping+"-"+typeof size);
       
     
 
